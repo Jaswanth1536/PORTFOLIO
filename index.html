@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K Jaswanth Reddy - Data Science Portfolio</title>
+    <meta name="description" content="Portfolio of K Jaswanth Reddy, an aspiring Data Scientist, Machine Learning Enthusiast, and Full Stack Developer.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Boxicons for Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header id="header">
+        <nav class="container nav-content">
+            <a href="#" class="logo text-gradient">KJR<span>.</span></a>
+            
+            <!-- Desktop Menu -->
+            <ul class="nav-links desktop-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education & Certs</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <!-- Mobile Menu Btn -->
+            <button id="menu-btn" class="mobile-btn focus-outline-none">
+                <i class='bx bx-menu'></i>
+            </button>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu glassmorphism shadow-2xl">
+            <button id="close-menu" class="close-menu">
+                <i class='bx bx-x'></i>
+            </button>
+            <a href="#home" class="mobile-link text-xl font-poppins">Home</a>
+            <a href="#skills" class="mobile-link text-xl font-poppins">Skills</a>
+            <a href="#projects" class="mobile-link text-xl font-poppins">Projects</a>
+            <a href="#education" class="mobile-link text-xl font-poppins">Education & Certs</a>
+            <a href="#resume" class="mobile-link text-xl font-poppins">Resume</a>
+            <a href="#contact" class="mobile-link text-xl font-poppins">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="home-section relative overflow-hidden">
+            <div class="glow-blob top-blob"></div>
+            <div class="glow-blob bottom-blob delay-1"></div>
+            
+            <div class="container hero-content z-10">
+                <div class="hero-text reveal-left">
+                    <p class="greeting text-primary uppercase text-sm mb-2">Hello, my name is</p>
+                    <h1 class="main-title text-5xl font-bold mb-4">K Jaswanth Reddy</h1>
+                    
+                    <h2 class="sub-title text-gray-300 text-2xl font-semibold mb-6">
+                        <span class="typing-text">Aspiring Data Scientist</span>
+                        <span class="divider text-primary mx-2">|</span>
+                        <span class="secondary-title text-gray-400">Machine Learning Enthusiast</span>
+                        <span class="divider hidden-mobile text-primary mx-2">|</span>
+                        <span class="tertiary-title text-gray-400">Full Stack Developer</span>
+                    </h2>
+                    
+                    <p class="intro-text text-gray-400 text-lg mb-10 max-w-2xl leading-relaxed">
+                        Passionate Computer Science student with a strong foundation in Data Structures, Machine Learning, and Full Stack Development. I enjoy building data-driven solutions and solving real-world problems using intelligent systems.
+                    </p>
+                    
+                    <div class="hero-actions flex gap-4">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="resume.pdf" class="btn btn-outline" download>Download Resume</a>
+                        <a href="#contact" class="btn btn-text">Contact Me <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+
+                    <div class="social-links mt-12 flex gap-6">
+                        <a href="https://github.com/Jaswanth1536" target="_blank" class="social-icon"><i class='bx bxl-github'></i></a>
+                        <a href="https://linkedin.com/in/jaswanth-reddy1536" target="_blank" class="social-icon"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </div>
+                
+                <div class="hero-image reveal-right flex justify-center mt-16 mt-mobile-none">
+                    <div class="hero-graphic relative">
+                        <div class="graphic-bg absolute bg-gradient-to-tr animate-morph opacity-70 blur-md"></div>
+                        <div class="graphic-inner absolute bg-dark animate-morph z-10 glassmorphism-heavy flex items-center justify-center overflow-hidden">
+                            <img src="profile.jpg" alt="K Jaswanth Reddy" class="profile-pic w-full h-full object-cover">
+                        </div>
+                        <div class="float-icon icon-1 glassmorphism float-anim"><i class='bx bx-code-alt text-2xl text-primary'></i></div>
+                        <div class="float-icon icon-2 glassmorphism float-anim delay-1"><i class='bx bx-brain text-2xl text-secondary'></i></div>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#skills" class="scroll-down animate-bounce text-3xl"><i class='bx bx-mouse'></i></a>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-24 relative">
+            <div class="container px-6">
+                <div class="section-header text-center mb-16 reveal-up">
+                    <h2 class="section-title">My <span class="text-gradient">Skills</span></h2>
+                    <p class="section-desc text-gray-400 max-w-2xl mx-auto mt-4">Technologies, frameworks, and tools I use to build solutions.</p>
+                </div>
+
+                <div class="skills-grid grid gap-8">
+                    <!-- Programming Languages -->
+                    <div class="skill-card glassmorphism p-8 rounded-2xl reveal-up">
+                        <div class="skill-header flex items-center gap-4 mb-6">
+                            <div class="skill-icon text-primary"><i class='bx bx-code-block'></i></div>
+                            <h3 class="font-poppins font-semibold text-xl">Programming Languages</h3>
+                        </div>
+                        <div class="skill-list space-y-4">
+                            <div class="skill-item">
+                                <div class="skill-info flex justify-between mb-1"><span>Java</span><span class="text-primary">90%</span></div>
+                                <div class="progress-bg"><div class="progress-bar bg-primary" data-width="90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info flex justify-between mb-1"><span>Python</span><span class="text-primary">85%</span></div>
+                                <div class="progress-bg"><div class="progress-bar bg-primary" data-width="85%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info flex justify-between mb-1"><span>C++ / C</span><span class="text-primary">80%</span></div>
+                                <div class="progress-bg"><div class="progress-bar bg-primary" data-width="80%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Machine Learning -->
+                    <div class="skill-card glassmorphism p-8 rounded-2xl reveal-up delay-100">
+                        <div class="skill-header flex items-center gap-4 mb-6">
+                            <div class="skill-icon text-secondary"><i class='bx bx-brain'></i></div>
+                            <h3 class="font-poppins font-semibold text-xl">Machine Learning</h3>
+                        </div>
+                        <ul class="skill-check-list space-y-3 text-gray-300">
+                            <li><i class='bx bx-check text-secondary'></i> Supervised Learning</li>
+                            <li><i class='bx bx-check text-secondary'></i> Model Evaluation</li>
+                            <li><i class='bx bx-check text-secondary'></i> Data Preprocessing</li>
+                            <li><i class='bx bx-check text-secondary'></i> Feature Engineering</li>
+                        </ul>
+                    </div>
+
+                    <!-- Libraries & Frameworks -->
+                    <div class="skill-card glassmorphism p-8 rounded-2xl reveal-up delay-200">
+                        <div class="skill-header flex items-center gap-4 mb-6">
+                            <div class="skill-icon text-purple"><i class='bx bxl-python'></i></div>
+                            <h3 class="font-poppins font-semibold text-xl">Libraries & Frameworks</h3>
+                        </div>
+                        <div class="skill-tags flex flex-wrap gap-3">
+                            <span class="skill-tag">Scikit-learn</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">Matplotlib</span>
+                        </div>
+                    </div>
+
+                    <!-- Web Development -->
+                    <div class="skill-card glassmorphism p-8 rounded-2xl reveal-up delay-300">
+                        <div class="skill-header flex items-center gap-4 mb-6">
+                            <div class="skill-icon text-blue"><i class='bx bx-globe'></i></div>
+                            <h3 class="font-poppins font-semibold text-xl">Web Development</h3>
+                        </div>
+                        <div class="skill-list space-y-4">
+                            <div class="skill-item">
+                                <div class="skill-info flex justify-between mb-1"><span>HTML/CSS</span><span class="text-blue">90%</span></div>
+                                <div class="progress-bg"><div class="progress-bar bg-blue" data-width="90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info flex justify-between mb-1"><span>React</span><span class="text-blue">75%</span></div>
+                                <div class="progress-bg"><div class="progress-bar bg-blue" data-width="75%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info flex justify-between mb-1"><span>Node.js/Express</span><span class="text-blue">70%</span></div>
+                                <div class="progress-bg"><div class="progress-bar bg-blue" data-width="70%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Platforms -->
+                    <div class="skill-card glassmorphism p-8 rounded-2xl reveal-up delay-400">
+                        <div class="skill-header flex items-center gap-4 mb-6">
+                            <div class="skill-icon text-green"><i class='bx bx-wrench'></i></div>
+                            <h3 class="font-poppins font-semibold text-xl">Tools & Platforms</h3>
+                        </div>
+                        <div class="skill-tags flex flex-wrap gap-3">
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">Excel</span>
+                            <span class="skill-tag">Power BI</span>
+                            <span class="skill-tag">Git & GitHub</span>
+                            <span class="skill-tag">Anaconda</span>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <div class="skill-card glassmorphism p-8 rounded-2xl reveal-up delay-500">
+                        <div class="skill-header flex items-center gap-4 mb-6">
+                            <div class="skill-icon text-yellow"><i class='bx bx-group'></i></div>
+                            <h3 class="font-poppins font-semibold text-xl">Soft Skills</h3>
+                        </div>
+                        <ul class="skill-check-list space-y-3 text-gray-300">
+                            <li><i class='bx bx-star text-yellow'></i> Problem-Solving</li>
+                            <li><i class='bx bx-star text-yellow'></i> Team Player</li>
+                            <li><i class='bx bx-star text-yellow'></i> Adaptability</li>
+                            <li><i class='bx bx-star text-yellow'></i> Time Management</li>
+                            <li><i class='bx bx-star text-yellow'></i> Stress Management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-24 bg-dark-50 relative">
+            <div class="container px-6">
+                <div class="section-header text-center mb-16 reveal-up">
+                    <h2 class="section-title">Case <span class="text-gradient">Studies</span></h2>
+                    <p class="section-desc text-gray-400 max-w-2xl mx-auto mt-4">Selected projects demonstrating my expertise in data science and software development.</p>
+                </div>
+
+                <div class="projects-list space-y-16">
+                    <!-- Project 1 -->
+                    <div class="project-card glassmorphism rounded-3xl overflow-hidden reveal-up group flex">
+                        <div class="project-content p-10 relative overflow-hidden">
+                            <div class="project-theme bg-gradient-to-r from-primary to-secondary"></div>
+                            <span class="project-category text-primary uppercase text-sm mb-3 block">Machine Learning</span>
+                            <h3 class="project-title text-3xl font-bold mb-4">Expense Fraud Detection using Supervised Machine</h3>
+                            <div class="project-highlights mb-8">
+                                <ul class="space-y-4 text-sm text-gray-400">
+                                    <li><i class='bx bx-check-circle text-primary'></i> Engineered an end-to-end fraud detection system using Python, Pandas, NumPy, and Scikit-Learn with automated preprocessing (imputation, scaling, encoding).</li>
+                                    <li><i class='bx bx-check-circle text-primary'></i> Trained and evaluated a Random Forest model using R² and MSE metrics after performing proper train–test splitting.</li>
+                                    <li><i class='bx bx-check-circle text-primary'></i> Conducted detailed EDA with Matplotlib and Seaborn to identify key patterns and anomalies in the dataset.</li>
+                                </ul>
+                            </div>
+                            <div class="tech-tags flex flex-wrap gap-2 mb-8">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Pandas</span>
+                                <span class="tech-tag">NumPy</span>
+                                <span class="tech-tag">Scikit-Learn</span>
+                                <span class="tech-tag">Matplotlib</span>
+                            </div>
+                            <a href="https://github.com/Jaswanth1536/Expense-Fraud-Detection-using-supervised-ML" target="_blank" class="btn btn-primary"><i class='bx bxl-github mr-2'></i> View Code</a>
+                        </div>
+                        <div class="project-image-box bg-gray-900-50 p-8 flex items-center justify-center relative overflow-hidden">
+                            <img src="fraud-detection.png" alt="Expense Fraud Detection Dashboard" class="w-full h-full object-cover rounded-2xl shadow-2xl group-hover-scale">
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card reverse glassmorphism rounded-3xl overflow-hidden reveal-up group flex">
+                        <div class="project-content p-10 relative overflow-hidden">
+                            <div class="project-theme bg-gradient-to-l from-secondary to-primary right-0"></div>
+                            <span class="project-category text-secondary uppercase text-sm mb-3 block">Software Development</span>
+                            <h3 class="project-title text-3xl font-bold mb-4">Community Help & Resource Exchange System</h3>
+                            <div class="project-highlights mb-8">
+                                <ul class="space-y-4 text-sm text-gray-400">
+                                    <li><i class='bx bx-check-circle text-secondary'></i> Developed a console-based community assistance platform connecting local helpers with users seeking support.</li>
+                                    <li><i class='bx bx-check-circle text-secondary'></i> Implemented features for registration, posting requests, volunteering, and tracking assistance history.</li>
+                                    <li><i class='bx bx-check-circle text-secondary'></i> Built using modular OOP design and DAO-based clean backend architecture with MySQL relational database.</li>
+                                </ul>
+                            </div>
+                            <div class="tech-tags flex flex-wrap gap-2 mb-8">
+                                <span class="tech-tag text-secondary-tag">Java</span>
+                                <span class="tech-tag text-secondary-tag">MySQL</span>
+                                <span class="tech-tag text-secondary-tag">OOP</span>
+                                <span class="tech-tag text-secondary-tag">Data Structures</span>
+                            </div>
+                            <div class="project-actions flex gap-4 mt-auto">
+                                <a href="https://github.com/Jaswanth1536/-Community-Help-and-Resource-Exchange-System" target="_blank" class="btn btn-outline flex-1 py-3 text-sm flex-center gap-2"><i class='bx bxl-github text-lg'></i> View Code</a>
+                                <a href="#" target="_blank" class="btn btn-primary flex-1 py-3 text-sm flex-center gap-2"><i class='bx bx-link-external text-lg'></i> Live Demo</a>
+                            </div>
+                        </div>
+                        <div class="project-image-box bg-gray-900-50 p-8 flex items-center justify-center relative overflow-hidden">
+                            <img src="community-help.png" alt="Community Help & Resource Dashboard" class="w-full h-full object-cover rounded-2xl shadow-2xl group-hover-scale">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Training Section -->
+        <section id="education" class="py-24 bg-dark border-t relative overflow-hidden">
+            <div class="container px-6 relative z-10 grid-splits">
+                <!-- Education -->
+                <div class="education-section">
+                    <div class="section-title-sm flex items-center gap-4 mb-10 reveal-left">
+                        <i class='bx bxs-graduation text-4xl text-blue'></i>
+                        <h2 class="text-3xl font-bold">Education</h2>
+                    </div>
+                    <div class="timeline relative space-y-8 pb-4">
+                        <div class="timeline-item reveal-up">
+                            <div class="timeline-dot bg-blue shadow-secondary"></div>
+                            <h4 class="text-xl font-semibold mb-1">Lovely Professional University</h4>
+                            <span class="text-sm text-blue mb-2 block">B.Tech - Computer Science and Engineering | Aug 2023 - Present</span>
+                            <p class="text-gray-400 text-sm">CGPA: 7.7 | Punjab, India</p>
+                        </div>
+                        <div class="timeline-item reveal-up delay-100">
+                            <div class="timeline-dot bg-gray"></div>
+                            <h4 class="text-xl font-semibold mb-1">Viswasai Junior College</h4>
+                            <span class="text-sm text-gray-400 mb-2 block">Intermediate | April 2021 - March 2023</span>
+                            <p class="text-gray-400 text-sm">Percentage: 87% | Bairagipatteda, Tirupati</p>
+                        </div>
+                        <div class="timeline-item reveal-up delay-200">
+                            <div class="timeline-dot bg-gray"></div>
+                            <h4 class="text-xl font-semibold mb-1">ViswaBharathi E.M School</h4>
+                            <span class="text-sm text-gray-400 mb-2 block">Matriculation | April 2020 - March 2021</span>
+                            <p class="text-gray-400 text-sm">Percentage: 100% | Rajendra Nagar, Gudivada</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Training -->
+                <div class="training-section">
+                    <div class="section-title-sm flex items-center gap-4 mb-10 reveal-right">
+                        <i class='bx bx-chalkboard text-4xl text-yellow'></i>
+                        <h2 class="text-3xl font-bold">Training</h2>
+                    </div>
+                    <div class="timeline relative space-y-8 pb-4">
+                        <div class="timeline-item reveal-up">
+                            <div class="timeline-dot bg-yellow shadow-primary"></div>
+                            <h4 class="text-xl font-semibold mb-1">Data Structures & Algorithms with Java</h4>
+                            <span class="text-sm text-yellow mb-2 block">Training Program | March 2025</span>
+                            <ul class="space-y-3 mt-3 text-sm text-gray-400">
+                                <li class="flex gap-2"><i class='bx bx-check text-yellow mt-1'></i> Completed structured training covering core DSA concepts using Java.</li>
+                                <li class="flex gap-2"><i class='bx bx-check text-yellow mt-1'></i> Strengthened skills in arrays, linked lists, stacks, queues, trees, graphs, and DP.</li>
+                                <li class="flex gap-2"><i class='bx bx-check text-yellow mt-1'></i> Practiced coding challenges, time–space complexity analysis, and algorithm optimization.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Achievements Section -->
+        <section id="certifications" class="py-24 bg-dark-50 relative overflow-hidden">
+            <div class="glow-blob center-blob"></div>
+            
+            <div class="container px-6 relative z-10 grid-splits">
+                <!-- Certifications -->
+                <div class="certs-section">
+                    <div class="section-title-sm flex items-center gap-4 mb-10 reveal-left">
+                        <i class='bx bx-certification text-4xl text-primary'></i>
+                        <h2 class="text-3xl font-bold">Certifications</h2>
+                    </div>
+                    
+                    <div class="timeline relative space-y-8 pb-4">
+                        <div class="timeline-item reveal-up">
+                            <div class="timeline-dot bg-primary shadow-primary"></div>
+                            <h4 class="text-xl font-semibold mb-1">Oracle Cloud Infrastructure 2025</h4>
+                            <span class="text-sm text-primary mb-2 block">Certified Data Science Professional – Oracle</span>
+                        </div>
+                        <div class="timeline-item reveal-up delay-100">
+                            <div class="timeline-dot bg-secondary shadow-secondary"></div>
+                            <h4 class="text-xl font-semibold mb-1">Computational Theory</h4>
+                            <span class="text-sm text-secondary mb-2 block">Language Principles & Finite Automata – Infosys Springboard</span>
+                        </div>
+                        <div class="timeline-item reveal-up delay-200">
+                            <div class="timeline-dot bg-gray"></div>
+                            <h4 class="text-xl font-semibold mb-1">Cloud Computing</h4>
+                            <span class="text-sm text-gray-400 mb-2 block">NPTEL – 12 weeks</span>
+                        </div>
+                        <div class="timeline-item reveal-up delay-300">
+                            <div class="timeline-dot bg-gray"></div>
+                            <h4 class="text-xl font-semibold mb-1">Responsive Web Design</h4>
+                            <span class="text-sm text-gray-400 mb-2 block">freeCodeCamp</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievements -->
+                <div id="achievements" class="achieve-section">
+                    <div class="section-title-sm flex items-center gap-4 mb-10 reveal-right">
+                        <i class='bx bx-trophy text-4xl text-yellow'></i>
+                        <h2 class="text-3xl font-bold">Achievements</h2>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="achieve-card glassmorphism p-6 rounded-2xl flex items-start gap-5 reveal-up">
+                            <div class="achieve-icon flex-center bg-gray-800">
+                                <i class='bx bxl-google text-2xl text-gray-300'></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold mb-1">Secured silver league badge in Google Skills</h4>
+                                <p class="text-gray-400 text-sm">Contributed to solving real-world coding challenges during the hackathon.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="achieve-card glassmorphism p-6 rounded-2xl flex items-start gap-5 reveal-up delay-100">
+                            <div class="achieve-icon flex-center bg-green-900-30 border-green">
+                                <i class='bx bx-code-curly text-2xl text-green'></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold mb-1">Secured bronze badge in HackerRank</h4>
+                                <p class="text-gray-400 text-sm">Secured Bronze badge in HackerRank (Python) – achieved 3-star rank.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="py-24 bg-dark-50 border-y relative">
+            <div class="container px-6 text-center reveal-up">
+                <h2 class="section-title mb-6">My <span class="text-gradient">Resume</span></h2>
+                <p class="section-desc text-gray-400 max-w-2xl mx-auto mb-10">Review my detailed professional experience and educational background.</p>
+                
+                <div class="resume-container max-w-4xl mx-auto glassmorphism rounded-3xl p-8">
+                    <div class="resume-preview bg-gray-900 rounded-xl mb-8 flex-col-center border-white-10 relative overflow-hidden shadow-2xl">
+                        <img src="resume-preview.jpg" alt="Resume Preview" class="w-full h-auto rounded-xl">
+                    </div>
+                    
+                    <a href="resume.pdf" class="btn btn-primary mx-auto inline-flex" download><i class='bx bx-download mr-2'></i> Download Resume</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 relative overflow-hidden">
+            <div class="glow-blob bottom-right-blob"></div>
+            
+            <div class="container px-6">
+                <div class="section-header text-center mb-16 reveal-up">
+                    <h2 class="section-title">Get In <span class="text-gradient">Touch</span></h2>
+                    <p class="section-desc text-gray-400 max-w-2xl mx-auto mt-4">Have an interesting project or opportunity? Let's connect.</p>
+                </div>
+
+                <div class="contact-grid grid gap-12 max-w-5xl mx-auto">
+                    <!-- Contact Info -->
+                    <div class="contact-info space-y-6 reveal-left">
+                        <div class="contact-card glassmorphism p-6 rounded-2xl flex items-center gap-5 hover-lift">
+                            <div class="contact-icon w-12 h-12 rounded-full bg-primary-20 flex-center text-primary text-xl">
+                                <i class='bx bx-envelope'></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm text-gray-400 mb-1">Email</h4>
+                                <a href="mailto:jaswanthreddy1536@gmail.com" class="text-white hover-primary text-sm break-all font-inter">jaswanthreddy1536@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card glassmorphism p-6 rounded-2xl flex items-center gap-5 hover-lift">
+                            <div class="contact-icon w-12 h-12 rounded-full bg-secondary-20 flex-center text-secondary text-xl">
+                                <i class='bx bx-phone'></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm text-gray-400 mb-1">Phone</h4>
+                                <a href="tel:+917093744431" class="text-white hover-secondary font-inter">+91-7093744431</a>
+                            </div>
+                        </div>
+
+                        <div class="social-connect pt-6 border-t font-poppins">
+                            <h4 class="text-lg font-medium mb-4">Connect on Socials</h4>
+                            <div class="flex gap-4">
+                                <a href="https://linkedin.com/in/jaswanth-reddy1536" target="_blank" class="social-circle glassmorphism flex-center hover-bg-primary text-xl"><i class='bx bxl-linkedin'></i></a>
+                                <a href="https://github.com/Jaswanth1536" target="_blank" class="social-circle glassmorphism flex-center hover-bg-white text-xl"><i class='bx bxl-github'></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-container reveal-right font-inter">
+                        <form id="contact-form" class="glassmorphism p-8 rounded-3xl flex flex-col gap-6">
+                            <div class="form-group flex flex-col gap-2">
+                                <label for="name" class="text-sm text-gray-300 font-medium ml-1">Your Name</label>
+                                <input type="text" id="name" name="from_name" required class="form-input" placeholder="John Doe">
+                            </div>
+                            <div class="form-group flex flex-col gap-2">
+                                <label for="email" class="text-sm text-gray-300 font-medium ml-1">Your Email</label>
+                                <input type="email" id="email" name="reply_to" required class="form-input" placeholder="john@example.com">
+                            </div>
+                            <div class="form-group flex flex-col gap-2">
+                                <label for="message" class="text-sm text-gray-300 font-medium ml-1">Message</label>
+                                <textarea id="message" name="message" rows="5" required class="form-input resize-none" placeholder="How can I help you?"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-full justify-center mt-2 group">
+                                Send Message <i class='bx bx-send ml-2 group-hover-slide'></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer py-8 border-t relative z-10 font-inter text-sm text-gray-500">
+        <div class="container px-6 flex flex-col md-flex-row justify-between items-center gap-4">
+            <p>&copy; 2024 K Jaswanth Reddy. All rights reserved.</p>
+            <div class="flex items-center gap-2">
+                <span>Designed with</span>
+                <i class='bx bxs-heart text-red transition-pulse'></i>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" id="back-to-top" class="back-to-top flex-center">
+        <i class='bx bx-up-arrow-alt'></i>
+    </a>
+
+</body>
+</html>
